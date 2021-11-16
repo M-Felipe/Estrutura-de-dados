@@ -1,0 +1,149 @@
+#containerForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  text-shadow: 3px 3px 10px #1e62d0;
+}
+
+.input_r {
+  border-style: dotted;
+  cursor: not-allowed;
+  color: #777;
+}
+
+.input:focus {
+  outline: 3px solid transparent;
+}
+
+.botao_blue {
+  background: #3d94f6;
+  background-image: -webkit-linear-gradient(top, #3d94f6, #1e62d0);
+  background-image: -moz-linear-gradient(top, #3d94f6, #1e62d0);
+  background-image: -ms-linear-gradient(top, #3d94f6, #1e62d0);
+  background-image: -o-linear-gradient(top, #3d94f6, #1e62d0);
+  background-image: -webkit-gradient(to bottom, #3d94f6, #1e62d0);
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 20px;
+  font-weight: 100;
+  padding: 15px;
+  -webkit-box-shadow: 1px 1px 20px 0 #000000;
+  -moz-box-shadow: 1px 1px 20px 0 #000000;
+  box-shadow: 1px 1px 20px 0 #000000;
+  text-shadow: 1px 1px 20px #000000;
+  border: solid #337fed 1px;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+}
+
+.botao_red {
+  background: #f63d3d;
+  background-image: -webkit-linear-gradient(top, #f63d3d, #d01e1e);
+  background-image: -moz-linear-gradient(top, #f63d3d, #d01e1e);
+  background-image: -ms-linear-gradient(top, #f63d3d, #d01e1e);
+  background-image: -o-linear-gradient(top, #f63d3d, #d01e1e);
+  background-image: -webkit-gradient(to bottom, #f63d3d, #d01e1e);
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 20px;
+  font-weight: 100;
+  padding: 15px;
+  -webkit-box-shadow: 1px 1px 20px 0 #000000;
+  -moz-box-shadow: 1px 1px 20px 0 #000000;
+  box-shadow: 1px 1px 20px 0 #000000;
+  text-shadow: 1px 1px 20px #000000;
+  border: solid #ed3333 1px;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+}
+
+.botao_green {
+  background: #4cf63d;
+  background-image: -webkit-linear-gradient(top, #4cf63d, #42d01e);
+  background-image: -moz-linear-gradient(top, #4cf63d, #42d01e);
+  background-image: -ms-linear-gradient(top, #4cf63d, #42d01e);
+  background-image: -o-linear-gradient(top, #4cf63d, #42d01e);
+  background-image: -webkit-gradient(to bottom, #4cf63d, #42d01e);
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 20px;
+  font-weight: 100;
+  padding: 15px;
+  -webkit-box-shadow: 1px 1px 20px 0 #000000;
+  -moz-box-shadow: 1px 1px 20px 0 #000000;
+  box-shadow: 1px 1px 20px 0 #000000;
+  text-shadow: 1px 1px 20px #000000;
+  border: solid #49ed33 1px;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+}
+
+.botao_yellow {
+  background: #f3f63d;
+  background-image: -webkit-linear-gradient(top, #f3f63d, #cdd01e);
+  background-image: -moz-linear-gradient(top, #f3f63d, #cdd01e);
+  background-image: -ms-linear-gradient(top, #f3f63d, #cdd01e);
+  background-image: -o-linear-gradient(top, #f3f63d, #cdd01e);
+  background-image: -webkit-gradient(to bottom, #f3f63d, #cdd01e);
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 20px;
+  font-weight: 100;
+  padding: 15px;
+  -webkit-box-shadow: 1px 1px 20px 0 #000000;
+  -moz-box-shadow: 1px 1px 20px 0 #000000;
+  box-shadow: 1px 1px 20px 0 #000000;
+  text-shadow: 1px 1px 20px #000000;
+  border: solid #edea33 1px;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+}
+
+.botao_orange {
+  background: #ff8800;
+  background-image: -webkit-linear-gradient(top, #ff8800, #d0831e);
+  background-image: -moz-linear-gradient(top, #ff8800, #d0831e);
+  background-image: -ms-linear-gradient(top, #ff8800, #d0831e);
+  background-image: -o-linear-gradient(top, #ff8800, #d0831e);
+  background-image: -webkit-gradient(to bottom, #ff8800, #d0831e);
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 20px;
+  font-weight: 100;
+  padding: 15px;
+  -webkit-box-shadow: 1px 1px 20px 0 #000000;
+  -moz-box-shadow: 1px 1px 20px 0 #000000;
+  box-shadow: 1px 1px 20px 0 #000000;
+  text-shadow: 1px 1px 20px #000000;
+  border: solid #ff8800 1px;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+}
