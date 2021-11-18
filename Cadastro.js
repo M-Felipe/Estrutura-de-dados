@@ -1,3 +1,6 @@
+var nome, cpf, data, senha, POUPANCA, CORRENTE
+var saldo = null
+
 function mask_cpf() {
   var n_char = document.getElementById('cpf').value.length
 
