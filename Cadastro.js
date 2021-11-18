@@ -43,3 +43,58 @@ function cadastro() {
     )
   }
 }
+
+function deposito() {
+  var saldo = document.getElementById('saldo').value
+  var deposit = window.prompt('Digite o valor a ser depositado: ')
+
+  if (isNaN(saldo) == false) {
+    if (deposit > 0) {
+      document.getElementById('saldo').value =
+        parseFloat(saldo) + parseFloat(deposit)
+    } else {
+      alert('Não é possivel depositar o valor indicado')
+    }
+  } else {
+    alert('Não é possivel depositar o valor indicado')
+  }
+}
+
+function saque() {
+  var saldo = document.getElementById('saldo').value
+  var saq = window.prompt('Digite o valor a ser sacado: ')
+  var verifica_senha = document.getElementById('senha').value
+  var senha = window.prompt('Insira sua senha')
+
+  if (verifica_senha == senha) {
+    if (isNaN(saq) == false) {
+      if ((saq > 0) & (saq <= saldo)) {
+        document.getElementById('saldo').value =
+          parseFloat(saldo) - parseFloat(saq)
+      } else {
+        alert('Não é possivel sacar o valor indicado')
+      }
+    } else {
+      alert('Não é possivel sacar o valor indicado')
+    }
+  } else {
+    alert('Senha incorreta')
+  }
+}
+
+function alterar() {
+  var verifica_senha = document.getElementById('senha').value
+  var senha = window.prompt('Insira sua senha')
+
+  if (verifica_senha == senha) {
+    document.getElementById('t_conta').disable = false
+    document.getElementById('t_conta2').disabled = false
+    document.getElementById('nome').disabled = false
+    document.getElementById('senha').disabled = false
+    document.getElementById('data').disabled = false
+
+    alert('Agora voce pode alterar seus dados cadastrais, menos o CPF ')
+  } else {
+    alert('Senha incorreta')
+  }
+}

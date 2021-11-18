@@ -36,13 +36,13 @@
 
     <br></br>
     <br></br>
-    <label for="saldo">Saldo:</label>
-    <input type="number" id="saldo" value="" class="input_r" readonly>
+    <label for="saldo">Saldo: R$</label>
+    <input type="text" id="saldo" value="0" class="input_r" size="10" readonly>
     <br></br>
-    <input type="button" value="DEPOSITO" class="botao_orange" onclick="" />
-    <input type="button" value="SAQUE" class="botao_blue" onclick="" />
+    <input type="button" value="DEPOSITO" class="botao_orange" onclick="deposito()" />
+    <input type="button" value="SAQUE" class="botao_blue" onclick="saque()" />
     <br></br>
-    <input type="button" value="ALTERAR DADOS CADASTRAIS" id="alteracao" class="botao_yellow" onclick="">
+    <input type="button" value="ALTERAR DADOS CADASTRAIS" id="alteracao" class="botao_yellow" onclick="alterar()">
     <input type="button" value="CANCELAR CONTA" class="botao_red" onclick="" />
   </body>
 </html>
