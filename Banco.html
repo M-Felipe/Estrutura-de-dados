@@ -22,16 +22,16 @@
       <input type="date" id="data">
       <br></br>
       <label for="senha">Insira uma senha:</label>
-      <input type="password" id="senha">
+      <input type="password" id="senha" maxlength="8">
       <br></br>
       <label>Selecione o tipo de conta:</label>
       <br></br>
-      <input type="radio" name="tipoconta" value="POUPANÇA" id="POUPANÇA">
+      <input type="radio" name="tipoconta" id="t_conta">
       <label for="POUPANÇA">POUPANÇA</label>
-      <input type="radio" name="tipoconta" value="CORRENTE" id="CORRENTE" >
+      <input type="radio" name="tipoconta" id="t_conta2">
       <label for="CORRENTE">CORRENTE</label>
       <br></br>
-      <input type="button" value="CONFIRMAR CADASTRO" class="botao_green" id="confirmar">
+      <input type="button" value="CONFIRMAR CADASTRO" class="botao_green" id="confirmar" onclick="cadastro()">
     </div>
 
     <br></br>
