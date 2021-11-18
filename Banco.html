@@ -7,49 +7,10 @@
     <title>Banco</title>
     <script type="text/javascript" src="Cadastro.js"></script>
     <link rel="stylesheet" type="text/css" href="estilo.css" />
-    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.js"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>-->
   </head>
   <body style="text-align: center">
     <h1>Seja bem vindo ao Banco MAXX</h1>
     <br></br>
-    <script type="text/javascript">
-      //let api = axios.create({
-          //baseURL: 'http://localhost/Estruturadedados'
-      //})
-
-      async function cadastrar(){
-          const nome = document.getElementById("nome")
-          const cpf = document.getElementById("cpf")
-          const data = document.getElementById("data")
-          const senha = document.getElementById("senha")
-          const tipoConta = document.querySelector('input[name="tipoconta"]:checked').value
-
-          /*await api.post('Cadastro.js',{
-              nome,
-              cpf,
-              data,
-              senha,
-              tipoConta
-          }).then(resposta =>{
-              if(resposta.nome === ""){
-                  alert('Insira o nome')
-              }
-              if(resposta.cpf === ""){
-                  alert('Insira o CPF')
-              }
-              if(resposta.data === ""){
-                  alert('Insira uma data')
-              }
-              if(resposta.senha === ""){
-                  alert('Senha invalida')
-              }
-              if(resposta.tipoconta === ""){
-                  alert('Selecione um tipo de conta')
-              }
-          }).catch(err => console.log(err));*/
-      }
-  </script>
     <div>
       <label for="nome">Insira seu nome:</label>
       <input type="text" id="nome" size="40">
@@ -70,13 +31,9 @@
       <input type="radio" name="tipoconta" id="t_conta2">
       <label for="CORRENTE">CORRENTE</label>
       <br></br>
-<<<<<<< HEAD
       <input type="button" value="CONFIRMAR CADASTRO" class="botao_green" id="confirmar" onclick="cadastro()">
-=======
-      <input type="button" value="CONFIRMAR CADASTRO" class="botao_green" id="confirmar" onclick="cadastrar()">
->>>>>>> 4c47af8808e95d88477060a42063888522dacd77
     </div>
-    
+
     <br></br>
     <br></br>
     <label for="saldo">Saldo: R$</label>
