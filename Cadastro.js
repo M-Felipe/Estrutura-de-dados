@@ -98,3 +98,12 @@ function alterar() {
     alert('Senha incorreta')
   }
 }
+
+function att_pag() {
+  var confirme = confirm('Escolha uma opção!')
+
+  if (confirme == true) {
+    alert('Obrigado por usar nosso programa bancario')
+    window.location.reload()
+  }
+}
