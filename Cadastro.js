@@ -11,12 +11,19 @@ function mask_cpf() {
 }
 
 function cadastro() {
+  var verificadora = 0
+
   if (document.getElementById('cpf').value.length < 14) {
     alert('CPF invalido')
-  } else if (document.getElementById('nome').value.length < 1) {
+    verificadora = parseInt(verificadora) + 1
+  }
+  if (document.getElementById('nome').value.length == 0) {
     alert('Campo nome vazio')
-  } else if (document.getElementById('senha').value.length < 4) {
+    verificadora = parseInt(verificadora) + 1
+  }
+  if (document.getElementById('senha').value.length < 4) {
     alert('A senha tem que ter mais de 4 digitos')
+    verificadora = parseInt(verificadora) + 1
   }
 
   // testa se o tipo de conta foi marcado
@@ -29,9 +36,7 @@ function cadastro() {
   }
 
   // se tudo estiver ok o programa vem para ca testa se foi marcado, se foi ele desativa os inputs da pag em HTML
-  if (teste == 0) {
-    alert('Tipo de conta não foi selecionado')
-  } else {
+  if ((verificadora == 0) & (teste == 1)) {
     document.getElementById('t_conta').disable = true
     document.getElementById('t_conta2').disabled = true
     document.getElementById('nome').disabled = true
@@ -41,6 +46,8 @@ function cadastro() {
     alert(
       'Cadastro realizado com sucesso ' + document.getElementById('nome').value
     )
+  } else {
+    alert('Alguma informação errada ou incopleta')
   }
 }
 
@@ -103,7 +110,7 @@ function att_pag() {
   var confirme = confirm('Escolha uma opção!')
 
   if (confirme == true) {
-    alert('Obrigado por usar nosso programa bancario')
+    alert('Obrigado por usar nosso programa bancário!')
     window.location.reload()
   }
 }
