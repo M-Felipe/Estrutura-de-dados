@@ -8,7 +8,11 @@
     <script type="text/javascript" src="Cadastro.js"></script>
     <link rel="stylesheet" type="text/css" href="estilo.css" />
   </head>
-  <body style="text-align: center">
+  <body style="text-align: center" onload="botton_off()">
+    <!--Trabalho realizado pelos integrantes-->
+    <!--Arthur de Almeida Guaitolini  1-1911780-->
+    <!--Luiza Angelo Lovo             1-1910163-->
+    <!--Marcos Felipe de F. Batista   1-1910125-->
     <h1>Seja bem vindo ao Banco MAXX</h1>
     <br></br>
     <div>
@@ -39,10 +43,10 @@
     <label for="saldo">Saldo: R$</label>
     <input type="text" id="saldo" value="0" class="input_r" size="10" readonly>
     <br></br>
-    <input type="button" value="DEPOSITO" class="botao_orange" onclick="deposito()" />
-    <input type="button" value="SAQUE" class="botao_blue" onclick="saque()" />
+    <button id="deposito" class="botao_orange" onclick="depositar()">DEPOSITO</button>
+    <input type="button" id="saque" value="SAQUE" class="botao_blue" onclick="sacar()"/>
     <br></br>
-    <input type="button" value="ALTERAR DADOS CADASTRAIS" id="alteracao" class="botao_yellow" onclick="alterar()">
-    <input type="button" value="CANCELAR CONTA" class="botao_red" onclick="att_pag()" />
+    <input type="button" value="ALTERAR DADOS CADASTRAIS" id="alteracao" class="botao_yellow" onclick="alterar()">    
+    <input type="button" id="cancelar" value="CANCELAR CONTA" class="botao_red" onclick="att_pag()"/>
   </body>
 </html>
